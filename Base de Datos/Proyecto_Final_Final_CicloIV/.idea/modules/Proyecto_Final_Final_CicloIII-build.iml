@@ -108,8 +108,8 @@
     </orderEntry>
   </component>
   <component name="SbtModule">
-    <option name="buildForURI" value="file:/C:/Users/D%20E%20L%20L/Documents/Proyecto_Final_Final_CicloIII/" />
-    <option name="imports" value="SUB:DOLLARb39a29e565b912ffefe7.`root`, _root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
+    <option name="buildForURI" value="file:/C:/Users/D%20E%20L%20L/Documents/Git%20Proyecto%20Ciclo%204/Proyecto-Integrador-Ciclo-IV/Base%20de%20Datos/Proyecto_Final_Final_CicloIV/" />
+    <option name="imports" value="SUB:DOLLAR97bf4b32b189d7b11458.`root`, _root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
     <option name="resolvers" value="https://repo1.maven.org/maven2/|maven|public, C:\Users\D E L L\.ivy2\cache|ivy|true|Local cache" />
   </component>
 </module>

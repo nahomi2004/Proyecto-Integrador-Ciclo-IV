@@ -6,12 +6,12 @@ import cats.effect.*
 import cats.implicits.*
 import com.github.tototoshi.csv.{CSVReader, DefaultCSVFormat}
 
-implicit object CustomFormat extends  DefaultCSVFormat {
+/*implicit object CustomFormat extends  DefaultCSVFormat {
   override  val delimiter: Char = ';'
-}
+}*/
 
 object lecturaCSV {
-  @main
+  // @main
   def ejecutable(): Unit = {
     val ruta1 = "C:/Users/D E L L/Documents/gitpood/maquina-Virtual-Linux/COPIA - BD_2016.csv"
     val ruta2 = "C:/Users/D E L L/Documents/gitpood/maquina-Virtual-Linux/COPIA - BD_2017.csv"
