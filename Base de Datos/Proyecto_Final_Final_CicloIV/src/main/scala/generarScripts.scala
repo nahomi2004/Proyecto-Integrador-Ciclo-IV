@@ -30,7 +30,7 @@ object generarScripts {
     }
 
     def escribirDatosTXT(nombreTXT: String, archivo: String): Unit = {
-      val rutaTXT = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Base de Datos/"
+      val rutaTXT = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Base de Datos/Script/"
       val rutaFinal = rutaTXT + nombreTXT
 
       val escritor = new BufferedWriter(new FileWriter(rutaFinal, true))
@@ -44,7 +44,7 @@ object generarScripts {
 
     def scriptSubcircuito(): Unit = {
       val nombreTXT = "subcircuito.sql"
-      val insertFormat = s"INSERT INTO subcircuito(codigo, nombre) VALUES('%s', '%s');"
+      val insertFormat = s"INSERT INTO Subcircuito (codigo_Subcircuito, nombre) VALUES('%s', '%s');"
 
       val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -254,6 +254,24 @@ object generarScripts {
     }
 
     // scriptProvincias()
+
+    def scriptUbicaciones(): Unit = {
+      val nombreTXT = "ubicacion.sql"
+      val insertFormat = s"INSERT INTO ubicacion(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+
+      val data = leerRutas(ruta2022)
+
+      // val data = (data1 ++ data2) // Unir todos las parroquias y sus codigos desde que empezó a tomarse estos datos (2023)
+
+      val value = data
+        .map(x => x("nombre_provincia").trim)
+        .distinct
+        .sorted
+        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, 0, null, x)))
+      println("Script " + nombreTXT + " creado con éxito")
+    }
+
+    scriptUbicaciones()
 
     def saberCantones(): Unit = {
       val rutaTXT = "C:/Users/D E L L/Documents/gitpood/maquina-Virtual-Linux/cantones.csv"
