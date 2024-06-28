@@ -44,7 +44,7 @@ object generarScripts {
 
     def scriptSubcircuito(): Unit = {
       val nombreTXT = "subcircuito.sql"
-      val insertFormat = s"INSERT INTO Subcircuito (codigo_Subcircuito, nombre) VALUES('%s', '%s');"
+      val insertFormat = s"INSERT INTO Subcircuito(codigo_Subcircuito, nombre) VALUES('%s', '%s');"
 
       val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -61,11 +61,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptSubcircuito()
+    scriptSubcircuito()
 
     def scriptCircuito(): Unit = {
       val nombreTXT = "circuito.sql"
-      val insertFormat = s"INSERT INTO circuito(codigo_distrito, codigo, nombre) VALUES('%s', '%s');"
+      val insertFormat = s"INSERT INTO Circuito(codigo_Circuito, nombre) VALUES('%s', '%s');"
 
       val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -82,11 +82,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptCircuito()
+    scriptCircuito()
 
     def scriptDistrito(): Unit = {
       val nombreTXT = "distrito.sql"
-      val insertFormat = s"INSERT INTO distrito(codigo, nombre) VALUES('%s', '%s');"
+      val insertFormat = s"INSERT INTO Distrito(codigo_Distrito, nombre) VALUES('%s', '%s');"
 
       val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -103,11 +103,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptDistrito()
+    scriptDistrito()
 
     def scriptZona(): Unit = {
       val nombreTXT = "zona.sql"
-      val insertFormat = s"INSERT INTO zona(nombre, nombre_subzona) VALUES('%s', '%s');"
+      val insertFormat = s"INSERT INTO Zona(nombre_Zona, nombre_Subzona) VALUES('%s', '%s');"
 
       val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -131,11 +131,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptZona()
+    scriptZona()
 
     def scriptParroquia2324(): Unit = {
       val nombreTXT = "parroquia.sql"
-      val insertFormat = s"INSERT INTO parroquia(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Parroquia(id, codigo_Parroquia, nombre) VALUES(%d, '%s', '%s');"
 
       // val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -152,11 +152,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptParroquia2324()
+    scriptParroquia2324()
 
     def scriptParroquia22(): Unit = {
       val nombreTXT = "parroquia2022.sql"
-      val insertFormat = s"INSERT INTO parroquia(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Parroquia(id, codigo_Parroquia, nombre) VALUES(%d, '%s', '%s');"
 
       val data = leerRutas(ruta2022)
 
@@ -170,11 +170,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptParroquia22()
+    scriptParroquia22()
 
     def scriptCanton2324(): Unit = {
       val nombreTXT = "canton2324.sql"
-      val insertFormat = s"INSERT INTO canton(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Canton(id, codigo_Canton, nombre) VALUES(%d, '%s', '%s');"
 
       // val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -191,19 +191,19 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptCanton2324()
+    scriptCanton2324()
 
     def scriptCantones(): Unit = {
       val nombreTXT = "canton.sql"
-      val insertFormat = s"INSERT INTO canton(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Canton(id, codigo_Canton, nombre) VALUES(%d, '%s', '%s');"
 
-      val data0 = leerRutas(ruta2022)
-      val data1 = leerRutas(ruta2016)
-      val data2 = leerRutas(ruta2017)
-      val data3 = leerRutas(ruta2018)
-      val data4 = leerRutas(ruta2019)
-      val data5 = leerRutas(ruta2020)
-      val data6 = leerRutas(ruta2021)
+      val data0 = leerRutas(ruta2016)
+      val data1 = leerRutas(ruta2017)
+      val data2 = leerRutas(ruta2018)
+      val data3 = leerRutas(ruta2019)
+      val data4 = leerRutas(ruta2020)
+      val data5 = leerRutas(ruta2021)
+      val data6 = leerRutas(ruta2022)
       val data = (data0 ++ data1 ++ data2 ++ data3 ++ data4 ++ data5 ++ data6)
 
       val value = data
@@ -214,11 +214,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptCantones()
+    scriptCantones()
 
     def scriptProvincia2324(): Unit = {
       val nombreTXT = "provincia2324.sql"
-      val insertFormat = s"INSERT INTO provincia(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Provincia(id, codigo_Provincia, nombre) VALUES(%d, '%s', '%s');"
 
       // val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -235,11 +235,11 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptProvincia2324()
+    scriptProvincia2324()
 
     def scriptProvincias(): Unit = {
       val nombreTXT = "provincia.sql"
-      val insertFormat = s"INSERT INTO provincia(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Provincia(id, codigo_Provincia, nombre) VALUES(%d, '%s', '%s');"
 
       val data = leerRutas(ruta2022)
 
@@ -253,21 +253,30 @@ object generarScripts {
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptProvincias()
+    scriptProvincias()
 
     def scriptUbicaciones(): Unit = {
       val nombreTXT = "ubicacion.sql"
-      val insertFormat = s"INSERT INTO ubicacion(id, codigo, nombre) VALUES(%d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO Ubicacion(codigo_Ubi, codigo_circuito, codigo_subcircuito, nombre_Zona, nombre_Subzona codigo_parroquia, " +
+        s"codigo_provincia, codigo_canton, codigo_distrito) VALUES(%d, '%s', '%s', '%s', '%s', %d, %d, %d, '%s');"
 
-      val data = leerRutas(ruta2022)
+      val data0 = leerRutas(ruta2023)
+      val data1 = leerRutas(ruta2024)
 
-      // val data = (data1 ++ data2) // Unir todos las parroquias y sus codigos desde que empezó a tomarse estos datos (2023)
+      val data = (data0 ++ data1) // Unir todos las variables que hay en los años 2023 y 2024
 
       val value = data
-        .map(x => x("nombre_provincia").trim)
+        .map(x => (x("codigo_circuito").trim,
+          x("codigo_subcircuito").trim,
+          x("nombre_zona").trim,
+          x("nombre_subzona").trim,
+          x("codigo_parroquia").trim,
+          x("codigo_provincia").trim,
+          x("codigo_canton").trim,
+          x("codigo_distrito").trim))
         .distinct
         .sorted
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, 0, null, x)))
+        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, 0, x._1, x._2, x._3, x._4, x._5, x._6, x._7, x._8)))
       println("Script " + nombreTXT + " creado con éxito")
     }
 
