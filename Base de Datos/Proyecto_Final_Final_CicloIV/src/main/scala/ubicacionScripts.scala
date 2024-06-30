@@ -9,7 +9,7 @@ implicit object CustomFormat extends  DefaultCSVFormat {
   override  val delimiter: Char = ';'
 }
 object generarScripts {
-  @main
+  // @main
   def ejecutable(): Unit = {
     val ruta2016 = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Excel/COPIA - BD_2016.csv"
     val ruta2017 = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Excel/COPIA - BD_2017.csv"

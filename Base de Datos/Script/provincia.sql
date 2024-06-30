@@ -1,0 +1,28 @@
+USE detenidos;
+
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('0', 'MAR TERRITORIAL');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('1', 'AZUAY');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('10', 'IMBABURA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('11', 'LOJA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('12', 'LOS RIOS');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('13', 'MANABI');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('14', 'MORONA SANTIAGO');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('15', 'NAPO');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('16', 'PASTAZA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('17', 'PICHINCHA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('18', 'TUNGURAHUA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('19', 'ZAMORA CHINCHIPE');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('2', 'BOLIVAR');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('20', 'GALAPAGOS');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('21', 'SUCUMBIOS');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('22', 'ORELLANA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('23', 'SANTO DOMINGO DE LOS TSACHILAS');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('24', 'SANTA ELENA');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('3', 'CAÑAR');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('4', 'CARCHI');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('5', 'COTOPAXI');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('6', 'CHIMBORAZO');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('7', 'EL ORO');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('8', 'ESMERALDAS');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('9', 'GUAYAS');
+INSERT INTO Provincia(codigo_provincia, nombre) VALUES('90', 'CAÑAR');
