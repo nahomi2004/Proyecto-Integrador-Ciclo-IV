@@ -1,0 +1,9 @@
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2016', '149000000000000', '2911927', '4.6', '5.83', '28.8');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2017', '155000000000000', '3114763', '3.8', '5.81', '27.6');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2018', '189000000000000', '3903315', '3.5', '5.84', '27.2');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2019', '191000000000000', '3557506', '3.8', '6.84', '24.4');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2020', '140000000000000', '978493', '6.1', '7.8', '25.1');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2021', '118000000000000', '1376221', '4.5', '17.02', '23.1');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2022', '114000000000000', '2457544', '3.8', '26.99', '20.1');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2023', '0', '0', '3.6', '47.25', '20.1');
+INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) VALUES('2024', '0', '0', '0', '64.9', '0');

@@ -1,0 +1,9 @@
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2016', '103', '7', '314', '1190');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2017', '134', '6', '298', '1123');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2018', '94', '12', '427', '1143');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2019', '105', '11', '485', '1384');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2020', '142', '12', '558', '1695');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2021', '131', '42', '528', '2834');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2022', '55', '19', '235', '976');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2023', '60', '60', '269', '853');
+INSERT INTO VictimasHomicidio(anioVictimas, feminicidio, sicaritio, homicidio, asesinato) VALUES('2024', '4', '0', '14', '58');
