@@ -81,7 +81,7 @@ object detencionScripts {
         s"estado_civil, estatus_migratorio, edad, sexo, genero, nacionalidad, autoidentificacion_etnica, " +
         s"numero_detenciones, nivel_instruccion, condicion, movilizacion, fecha_detencion_aprehension, " +
         s"hora_detencion, lugar, tipo_lugar, presunta_flagrancia) VALUES(%d, %d, '%s', '%s', '%s', '%s', '%s', '%s', " +
-        s"'%s', %d, '%s', '%s', '%s', '%s', %d, '%s', '%s', '%s', TO_DATE('%s'), '%s', '%s', '%s', '%s');"
+        s"'%s', %d, '%s', '%s', '%s', '%s', %d, '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');"
 
       // val data0 = leerRutas(ruta2016)
       // val data1 = leerRutas(ruta2017)
@@ -144,6 +144,110 @@ object detencionScripts {
       // println(value.size) comprobar que están las 24 provincias, hay 26, dos veces Cañar 3 - 90 y mar territorial
     }
 
-    scriptDetencion();
+    scriptDetencion()
+
+    def scriptDetencion22(): Unit = {
+      val nombreTXT = "detencion22.sql"
+      val insertFormat = s"INSERT INTO Detencion(anio, id_detencion, zona, subzona, tipo_arma, nombre_arma, tipo, " +
+        s"estado_civil, estatus_migratorio, edad, sexo, genero, nacionalidad, autoidentificacion_etnica, " +
+        s"numero_detenciones, nivel_instruccion, condicion, movilizacion, fecha_detencion_aprehension, " +
+        s"hora_detencion, lugar, tipo_lugar, presunta_flagrancia) VALUES(%d, %d, '%s', '%s', '%s', '%s', '%s', '%s', " +
+        s"'%s', %d, '%s', '%s', '%s', '%s', %d, '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');"
+      val data = leerRutas(ruta2022)
+
+      val value = data
+        .map { x =>
+          (
+            x("anio").trim.toInt,
+            x("id").trim.toInt,
+            x("nombre_zona").trim,
+            x("nombre_subzona").trim,
+            x("tipo").trim,
+            x("edad").trim.toInt,
+            x("sexo").trim,
+            x("Nacionalidad").trim,
+            x("autoidentificacion_etnica").trim,
+            x("numero_detenciones").trim.toInt,
+            definirFecha(x("fecha_detencion_aprehension").trim),
+            x("hora_detencion_aprehension").trim,
+            x("lugar").trim,
+            x("presunta_flagrancia").trim
+          )
+        }
+        .map(x => escribirDatosTXT(nombreTXT,
+            insertFormat.formatLocal(
+              java.util.Locale.US, x._1, x._2, x._3, x._4, null, null, x._5, null, null, x._6, x._7, null, x._8,
+              x._9, x._10, null, null, null, x._11, x._12, x._13, null, x._14)))
+      println("Script " + nombreTXT + " creado con éxito")
+      // println(value.size) comprobar que están las 24 provincias, hay 26, dos veces Cañar 3 - 90 y mar territorial
+    }
+
+    // scriptDetencion22()
+
+    def scriptDetencion1921(): Unit = {
+      val nombreTXT = "detencion1921.sql"
+      val insertFormat = s"INSERT INTO Detencion(anio, id_detencion, zona, subzona, tipo_arma, nombre_arma, tipo, " +
+        s"estado_civil, estatus_migratorio, edad, sexo, genero, nacionalidad, autoidentificacion_etnica, " +
+        s"numero_detenciones, nivel_instruccion, condicion, movilizacion, fecha_detencion_aprehension, " +
+        s"hora_detencion, lugar, tipo_lugar, presunta_flagrancia) VALUES(%d, %d, '%s', '%s', '%s', '%s', '%s', '%s', " +
+        s"'%s', %d, '%s', '%s', '%s', '%s', %d, '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');"
+
+      // val data0 = leerRutas(ruta2016)
+      // val data1 = leerRutas(ruta2017)
+      // val data2 = leerRutas(ruta2018)
+      val data3 = leerRutas(ruta2019)
+      val data4 = leerRutas(ruta2020)
+      val data5 = leerRutas(ruta2021)
+
+      val data = data3 ++ data4 ++ data5
+      // Unir todos las provincias y sus codigos desde que empezó a tomarse estos datos (2023)
+
+      val value = data
+        .map { x =>
+          (
+            x("anio").trim.toInt,
+            x("id").trim.toInt,
+            x("nombre_zona").trim,
+            x("nombre_subzona").trim,
+            x("tipo_arma").trim,
+            x("arma").trim,
+            x("tipo").trim,
+            x("estado_civil").trim,
+            x("estatus_migratorio").trim,
+            x("edad").trim.toInt,
+            x("sexo").trim,
+            x("genero").trim,
+            x("Nacionalidad").trim,
+            x("autoidentificacion_etnica").trim,
+            x("numero_detenciones").trim.toInt,
+            x("nivel_de_instruccion").trim,
+            x("condicion").trim,
+            x("movilizacion").trim,
+            definirFecha(x("fecha_detencion_aprehension").trim),
+            x("hora_detencion_aprehension").trim,
+            x("lugar").trim,
+            x("tipo_lugar").trim,
+            x("presunta_flagrancia").trim
+          )
+        }
+        .map { case (
+          anio, id, nombre_zona, nombre_subzona, tipo_arma, arma, tipo, estado_civil, estatus_migratorio, edad,
+          sexo, genero, nacionalidad, autoidentificacion_etnica, numero_detenciones, nivel_de_instruccion,
+          condicion, movilizacion, fecha_detencion_apreh, hora_detencion_apreh, lugar, tipo_lugar,
+          presunta_flagrancia
+          ) =>
+          escribirDatosTXT(
+            nombreTXT,
+            insertFormat.formatLocal(
+              java.util.Locale.US, anio, id, nombre_zona, nombre_subzona, tipo_arma, arma, tipo, estado_civil,
+              estatus_migratorio, edad, sexo, genero, nacionalidad, autoidentificacion_etnica, numero_detenciones,
+              nivel_de_instruccion, condicion, movilizacion, fecha_detencion_apreh, hora_detencion_apreh, lugar,
+              tipo_lugar, presunta_flagrancia
+            )
+          )
+        }
+      println("Script " + nombreTXT + " creado con éxito")
+      // println(value.size) comprobar que están las 24 provincias, hay 26, dos veces Cañar 3 - 90 y mar territorial
+    }
   }
 }
