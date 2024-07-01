@@ -43,7 +43,7 @@ object crimenScripts {
     }
 
     def escribirDatosTXT2(archivo: String): Unit =
-      val rutaTXT = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Base de Datos/Script/scriptInsertIntos.sql"
+      val rutaTXT = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Base de Datos/Script/scriptInsertIntos2.sql"
 
       val escritor = new BufferedWriter(new FileWriter(rutaTXT, true))
       try {
@@ -57,9 +57,18 @@ object crimenScripts {
       if (s.isEmpty) 0 else s.toInt
 
     def scriptCrimen(): Unit = {
+      /*
+      .map(x => {
+            val presuntaSubinfraccion = x("Presunta_Subinfraccion").trim
+            val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+            (x("anio").trim.toInt,
+              x("id").trim.toInt,
+              truncatedSubinfraccion)
+          })
+      * */
       val nombreTXT = "crimen2324.sql"
-      val insertFormat = s"INSERT INTO Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad) " +
-        s"VALUES('%s', '%s', '%s', '%s');"
+      val insertFormat = s"INSERT INTO Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad, presunta_subinfraccion_incom, presunta_modalidad_incom) " +
+        s"VALUES('%s', '%s', '%s', '%s', '%s', '%s');"
 
       // val data0 = leerRutas(ruta2022)
       val data1 = leerRutas(ruta2023)
@@ -68,38 +77,49 @@ object crimenScripts {
       val data = (data1 ++ data2) // Unir todos los cantones y sus codigos desde que empezó a tomarse estos datos (2023)
 
       val value = data
-        .map(x => (x("codigo_iccs").trim,
+        .map(x => {
+          val presuntaSubinfraccion = x("presunta_subinfraccion").trim
+          val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+          val presuntaModalidad = x("presunta_modalidad").trim
+          val truncatedModalidad = if (presuntaModalidad.length > 200) presuntaModalidad.substring(0, 200) else presuntaModalidad
+          (x("codigo_iccs").trim,
           x("presunta_infraccion").trim,
           x("presunta_subinfraccion").trim,
-          x("presunta_modalidad").trim))
+          x("presunta_modalidad").trim,
+          truncatedSubinfraccion,
+          truncatedModalidad)})
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4, x._5, x._6)))
       println("Script " + nombreTXT + " creado con éxito")
-      println(value.size)
+      // println(value.size)
     }
 
     def scriptCrimen22(): Unit = {
       val nombreTXT = "crimen22.sql"
-      val insertFormat = s"INSERT INTO Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad) " +
-        s"VALUES('%s', '%s', '%s', '%s');"
+      val insertFormat = s"INSERT INTO Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad, presunta_subinfraccion_incom, presunta_modalidad_incom) " +
+        s"VALUES('%s', '%s', '%s', '%s', '%s', '%s');"
 
       val data = leerRutas(ruta2022)
 
       val value = data
-        .map(x => (x("presunta_infraccion").trim,
-          x("presunta_subinfraccion").trim))
+        .map(x => {
+          val presuntaSubinfraccion = x("presunta_subinfraccion").trim
+          val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+          (x("presunta_infraccion").trim,
+          x("presunta_subinfraccion").trim,
+          truncatedSubinfraccion)})
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, "SIN DATO", x._1, x._2, null)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, "SIN DATO", x._1, x._2, null, x._3, "SIN DATO")))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
     }
 
     def scriptCrimen1621(): Unit = {
       val nombreTXT = "crimen1621.sql"
-      val insertFormat = s"INSERT INTO Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad) " +
-        s"VALUES('%s', '%s', '%s', '%s');"
+      val insertFormat = s"INSERT INTO Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad, presunta_subinfraccion_incom, presunta_modalidad_incom) " +
+        s"VALUES('%s', '%s', '%s', '%s', '%s', '%s');"
 
       val data0 = leerRutas(ruta2016)
       val data1 = leerRutas(ruta2017)
@@ -111,10 +131,17 @@ object crimenScripts {
       val data = data0 ++ data1 ++ data2 ++ data3 ++ data4 ++ data5
 
       val value = data
-        .map(x => x("Presunta_Subinfraccion").trim)
+        .filter(x =>
+          !x("Presunta_Subinfraccion").trim.isEmpty
+        )
+        .map(x => {
+          val presuntaSubinfraccion = x("Presunta_Subinfraccion").trim
+          val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+          (x("Presunta_Subinfraccion").trim,
+          truncatedSubinfraccion)})
         .distinct
         .sorted
-        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, "SIN DATO", "SIN DATO", x, null)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, "SIN DATO", "SIN DATO", x._1, null, x._2, "SIN DATO")))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
     }
@@ -139,9 +166,13 @@ object crimenScripts {
           !x("id").trim.isEmpty &&
           !x("Presunta_Subinfraccion").trim.isEmpty
         )
-        .map(x => (x("anio").trim.toInt,
+        .map(x => {
+          val presuntaSubinfraccion = x("Presunta_Subinfraccion").trim
+          val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+          (x("anio").trim.toInt,
           x("id").trim.toInt,
-          x("Presunta_Subinfraccion").trim))
+          truncatedSubinfraccion)
+        })
         .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, "SIN DATO", "SIN DATO", x._3, "SIN DATO")))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
@@ -155,10 +186,13 @@ object crimenScripts {
       val data = leerRutas(ruta2022)
 
       val value = data
-        .map(x => (x("anio").trim.toInt,
+        .map(x => {
+          val presuntaSubinfraccion = x("presunta_subinfraccion").trim
+          val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+          (x("anio").trim.toInt,
           x("id").trim.toInt,
           x("presunta_infraccion"),
-          x("presunta_subinfraccion").trim))
+          truncatedSubinfraccion)})
         .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, "SIN DATO", x._3, x._4, "SIN DATO")))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
@@ -175,12 +209,17 @@ object crimenScripts {
       val data = (data1 ++ data2)
 
       val value = data
-        .map(x => (x("anio").trim.toInt,
+        .map(x => {
+          val presuntaSubinfraccion = x("presunta_subinfraccion").trim
+          val truncatedSubinfraccion = if (presuntaSubinfraccion.length > 200) presuntaSubinfraccion.substring(0, 200) else presuntaSubinfraccion
+          val presuntaModalidad = x("presunta_modalidad").trim
+          val truncatedModalidad = if (presuntaModalidad.length > 200) presuntaModalidad.substring(0, 200) else presuntaModalidad
+          (x("anio").trim.toInt,
           x("id").trim.toInt,
           x("codigo_iccs"),
           x("presunta_infraccion"),
-          x("presunta_subinfraccion").trim,
-          x("presunta_modalidad").trim))
+          truncatedSubinfraccion,
+          truncatedModalidad)})
         .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4, x._5, x._6)))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
