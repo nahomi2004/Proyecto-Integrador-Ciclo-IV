@@ -42,6 +42,18 @@ object detencionScripts {
       }
     }
 
+    def escribirDatosTXT2(archivo: String): Unit =
+      val rutaTXT = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Base de Datos/Script/scriptInsertIntos.sql"
+
+      val escritor = new BufferedWriter(new FileWriter(rutaTXT, true))
+      try {
+        escritor.write(archivo)
+        escritor.newLine()
+      } finally {
+        escritor.close()
+      }
+
+
     def valoresDoBuedos(s: String) =
       if (s.isEmpty) 0 else s.toInt
 
@@ -118,8 +130,7 @@ object detencionScripts {
           condicion, movilizacion, fecha_detencion_apreh, hora_detencion_apreh, lugar, tipo_lugar,
           presunta_flagrancia
           ) =>
-          escribirDatosTXT(
-            nombreTXT,
+          escribirDatosTXT2(
             insertFormat.formatLocal(
               java.util.Locale.US, anio, id, nombre_zona, nombre_subzona, tipo_arma, arma, tipo, estado_civil,
               estatus_migratorio, edad, sexo, genero, nacionalidad, autoidentificacion_etnica, numero_detenciones,
@@ -159,7 +170,7 @@ object detencionScripts {
             x("presunta_flagrancia").trim
           )
         }
-        .map(x => escribirDatosTXT(nombreTXT,
+        .map(x => escribirDatosTXT2(
             insertFormat.formatLocal(
               java.util.Locale.US, x._1, x._2, x._3, x._4, null, null, x._5, null, null, x._6, x._7, null, x._8,
               x._9, x._10, null, null, null, x._11, x._12, x._13, null, x._14)))
@@ -194,15 +205,13 @@ object detencionScripts {
           )
         }
         .map (x =>
-          escribirDatosTXT(nombreTXT, insertFormat.formatLocal(
+          escribirDatosTXT2(insertFormat.formatLocal(
               java.util.Locale.US, x._1, x._2, x._3, x._4, null, null, null, null, null, x._5, x._6, null, x._7, null,
             null, null, null, null, x._8, null, null, null, null)))
 
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // INSERT INTO tu_tabla (columna_fecha)
-    //VALUES (STR_TO_DATE('11/9/2023', '%d/%m/%Y'));
     def scriptDetencion1618(): Unit = {
       val nombreTXT = "detencion1618.sql"
       val insertFormat = s"INSERT INTO Detencion(anio, id_detencion, zona, subzona, tipo_arma, nombre_arma, tipo, " +
@@ -218,6 +227,17 @@ object detencionScripts {
       val data = data3 ++ data4 ++ data5
 
       val value = data
+        .filter(x =>
+          !x("anio").trim.isEmpty &&
+            !x("id").trim.isEmpty &&
+            !x("nombre_zona").trim.isEmpty &&
+            !x("nombre_subzona").trim.isEmpty &&
+            !x("Edad").trim.isEmpty &&
+            !x("Sexo").trim.isEmpty &&
+            !x("Nacionalidad").trim.isEmpty &&
+            !x("Fecha de Detencion").trim.isEmpty &&
+            !x("Flagrante/Boleta").trim.isEmpty
+        )
         .map { x =>
           (
             valoresDoBuedos(x("anio").trim),
@@ -232,14 +252,14 @@ object detencionScripts {
           )
         }
         .map(x =>
-          escribirDatosTXT(nombreTXT, insertFormat.formatLocal(
+          escribirDatosTXT2(insertFormat.formatLocal(
             java.util.Locale.US, x._1, x._2, x._3, x._4, null, null, null, null, null, x._5, x._6, null, x._7, null,
             null, null, null, null, x._8, null, null, null, x._9)))
 
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptDetencion1618()
+    scriptDetencion1618()
     scriptDetencion1921()
     scriptDetencion22()
     scriptDetencion()

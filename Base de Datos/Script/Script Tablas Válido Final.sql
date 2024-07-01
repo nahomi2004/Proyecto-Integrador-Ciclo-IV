@@ -53,7 +53,7 @@ CREATE TABLE Subcircuito (
 
 CREATE TABLE Detencion (
     anio INT,
-    id_detencion INT,
+    id_detencion INT AUTO_INCREMENT,
     zona VARCHAR(10),
     subzona VARCHAR(30),
     tipo_arma VARCHAR(50),
@@ -64,11 +64,11 @@ CREATE TABLE Detencion (
     edad INT,
     sexo VARCHAR(20),
     genero VARCHAR(20),
-    nacionalidad VARCHAR(10),
+    nacionalidad VARCHAR(50),
     autoidentificacion_etnica VARCHAR(50),
     numero_detenciones INT,
     nivel_instruccion VARCHAR(50),
-    condicion VARCHAR(100),
+    condicion TEXT,
     movilizacion VARCHAR(100),
     fecha_detencion_aprehension DATE,
     hora_detencion VARCHAR(20),
@@ -92,7 +92,7 @@ CREATE TABLE VictimasHomicidio (
 
 CREATE TABLE Tasas_Porcentaje (
     anioTasas INT PRIMARY KEY,
-    tasa_PoblacionE DOUBLE,
+    tasa_PoblacionE BIGINT,
     tasa_Inmigrantes DOUBLE,
     tasa_Desempleo DOUBLE,
     tasa_Crimen DOUBLE,
@@ -102,9 +102,9 @@ CREATE TABLE Tasas_Porcentaje (
 
 CREATE TABLE Crimen (
     codigo_iccs VARCHAR(20),
-    presunta_infraccion VARCHAR(100),
-    presunta_subinfraccion VARCHAR(100),
-    presunta_modalidad VARCHAR(100),
+    presunta_infraccion TEXT,
+    presunta_subinfraccion TEXT,
+    presunta_modalidad TEXT,
     PRIMARY KEY (codigo_iccs, presunta_subinfraccion)
 );
 
@@ -112,7 +112,7 @@ CREATE TABLE DetencionXCrimen (
     anio INT,
     id_detencion INT,
     codigo_iccs VARCHAR(20),
-    presunta_subinfraccion VARCHAR(100),
+    presunta_subinfraccion TEXT,
     FOREIGN KEY (anio, id_detencion) REFERENCES Detencion(anio, id_detencion),
     FOREIGN KEY (codigo_iccs, presunta_subinfraccion) REFERENCES Crimen(codigo_iccs, presunta_subinfraccion)
 );

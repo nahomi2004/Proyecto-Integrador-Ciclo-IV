@@ -42,6 +42,17 @@ object generarScripts {
       }
     }
 
+    def escribirDatosTXT2(archivo: String): Unit =
+      val rutaTXT = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Base de Datos/Script/scriptInsertIntos.sql"
+
+      val escritor = new BufferedWriter(new FileWriter(rutaTXT, true))
+      try {
+        escritor.write(archivo)
+        escritor.newLine()
+      } finally {
+        escritor.close()
+      }
+
     def scriptProvincia(): Unit = {
       val nombreTXT = "provincia.sql"
       val insertFormat = s"INSERT INTO Provincia(codigo_provincia, nombre) VALUES('%s', '%s');"
@@ -57,7 +68,7 @@ object generarScripts {
           x("nombre_provincia").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2)))
       println("Script " + nombreTXT + " creado con éxito")
       // println(value.size) comprobar que están las 24 provincias, hay 26, dos veces Cañar 3 - 90 y mar territorial
     }
@@ -86,7 +97,7 @@ object generarScripts {
           x("nombre_subzona").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2)))
       println("Script " + nombreTXT + " creado con éxito")
       // println(value.size)
     }
@@ -111,7 +122,7 @@ object generarScripts {
           x("nombre_canton").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4)))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
     }
@@ -134,7 +145,7 @@ object generarScripts {
           x("nombre_parroquia").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
       println("Script " + nombreTXT + " creado con éxito")
     }
 
@@ -156,7 +167,7 @@ object generarScripts {
           x("nombre_distrito").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
       println("Script " + nombreTXT + " creado con éxito")
     }
 
@@ -178,7 +189,7 @@ object generarScripts {
           x("nombre_circuito").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
       println("Script " + nombreTXT + " creado con éxito")
     }
 
@@ -200,10 +211,16 @@ object generarScripts {
           x("nombre_subcircuito").trim))
         .distinct
         .sortBy(x => (x._1, x._2))
-        .map(x => escribirDatosTXT(nombreTXT, insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3)))
       println("Script " + nombreTXT + " creado con éxito")
     }
 
-    // scriptSubcircuito()
+    scriptZona()
+    scriptProvincia()
+    scriptCanton()
+    scriptParroquia()
+    scriptDistrito()
+    scriptCircuito()
+    scriptSubcircuito()
   }
 }
