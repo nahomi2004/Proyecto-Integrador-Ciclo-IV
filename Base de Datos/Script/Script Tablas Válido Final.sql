@@ -103,18 +103,20 @@ CREATE TABLE Tasas_Porcentaje (
 CREATE TABLE Crimen (
     codigo_iccs VARCHAR(20),
     presunta_infraccion VARCHAR(200),
-    presunta_subinfraccion TEXT,
-    presunta_modalidad TEXT,
-    PRIMARY KEY (codigo_iccs, presunta_infraccion)
+    presunta_subinfraccion VARCHAR(500),
+    presunta_modalidad VARCHAR(1000),
+    PRIMARY KEY (codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad)
 );
 
 CREATE TABLE DetencionXCrimen (
     anio INT,
     id_detencion INT,
     codigo_iccs VARCHAR(20),
-    presunta_infraccion TEXT,
+    presunta_infraccion VARCHAR(200),
+    presunta_subinfraccion VARCHAR(500),
+    presunta_modalidad VARCHAR(1000),
     FOREIGN KEY (anio, id_detencion) REFERENCES Detencion(anio, id_detencion),
-    FOREIGN KEY (codigo_iccs, presunta_subinfraccion) REFERENCES Crimen(codigo_iccs, presunta_infraccion)
+    FOREIGN KEY (codigo_iccs, presunta_infraccion, presunta_subinfraccion) REFERENCES Crimen(codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad)
 );
 
     -- en esta tabla no deben haber claves primarias por que solo e sun "punte"

@@ -68,7 +68,7 @@ object tasasScripts {
     def scriptTasas(): Unit = {
       val nombreTXT = "tasasAdicionales.sql"
       val insertFormat = s"INSERT INTO Tasas_Porcentaje(anioTasas, tasa_PoblacionE, tasa_Inmigrantes, tasa_Desempleo, tasa_Crimen, tasa_Desnutricion) " +
-        s"VALUES(%d, %d, %.2f, %.2f, %.2f);"
+        s"VALUES(%d, %d, %.2f, %.2f, %.2f, %.2f);"
 
       val data = leerRutas(ruta)
 
@@ -88,7 +88,7 @@ object tasasScripts {
       println(value.size)
     }
 
-    scriptTasasVictimas()
-    scriptTasas()
+    // scriptTasasVictimas()
+    // scriptTasas()
   }
 }

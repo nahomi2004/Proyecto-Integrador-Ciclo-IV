@@ -9,7 +9,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 object crimenScripts {
-  // @main
+  @main
   def ejecutable(): Unit = {
     val ruta2016 = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Excel/COPIA - BD_2016.csv"
     val ruta2017 = "C:/Users/D E L L/Documents/Git Proyecto Ciclo 4/Proyecto-Integrador-Ciclo-IV/Excel/COPIA - BD_2017.csv"
@@ -121,8 +121,8 @@ object crimenScripts {
 
     def scriptDetencionXCrimen1621(): Unit = {
       val nombreTXT = "DetencionXCrimen1621.sql"
-      val insertFormat = s"INSERT INTO DetencionXCrimen(anio, id_detencion, codigo_iccs, presunta_infraccion) " +
-        s"VALUES(%d, %d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO DetencionXCrimen(anio, id_detencion, codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad) " +
+        s"VALUES(%d, %d, '%s', '%s', '%s', '%s');"
 
       val data0 = leerRutas(ruta2016)
       val data1 = leerRutas(ruta2017)
@@ -136,35 +136,38 @@ object crimenScripts {
       val value = data
         .filter(x =>
           !x("anio").trim.isEmpty &&
-          !x("id").trim.isEmpty
+          !x("id").trim.isEmpty &&
+          !x("Presunta_Subinfraccion").trim.isEmpty
         )
         .map(x => (x("anio").trim.toInt,
-          x("id").trim.toInt))
-        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, "SIN DATO", "SIN DATO")))
+          x("id").trim.toInt,
+          x("Presunta_Subinfraccion").trim))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, "SIN DATO", "SIN DATO", x._3, "SIN DATO")))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
     }
 
     def scriptDetencionXCrimen22(): Unit = {
       val nombreTXT = "DetencionXCrimen22.sql"
-      val insertFormat = s"INSERT INTO DetencionXCrimen(anio, id_detencion, codigo_iccs, presunta_infraccion) " +
-        s"VALUES(%d, %d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO DetencionXCrimen(anio, id_detencion, codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad) " +
+        s"VALUES(%d, %d, '%s', '%s', '%s', '%s');"
 
       val data = leerRutas(ruta2022)
 
       val value = data
         .map(x => (x("anio").trim.toInt,
           x("id").trim.toInt,
-          x("presunta_infraccion")))
-        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, "SIN DATO", x._3)))
+          x("presunta_infraccion"),
+          x("presunta_subinfraccion").trim))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, "SIN DATO", x._3, x._4, "SIN DATO")))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
     }
 
     def scriptDetencionXCrimen2324(): Unit = {
       val nombreTXT = "DetencionXCrimen2324.sql"
-      val insertFormat = s"INSERT INTO DetencionXCrimen(anio, id_detencion, codigo_iccs, presunta_infraccion) " +
-        s"VALUES(%d, %d, '%s', '%s');"
+      val insertFormat = s"INSERT INTO DetencionXCrimen(anio, id_detencion, codigo_iccs, presunta_infraccion, presunta_subinfraccion, presunta_modalidad) " +
+        s"VALUES(%d, %d, '%s', '%s', '%s', '%s');"
 
       val data1 = leerRutas(ruta2023)
       val data2 = leerRutas(ruta2024)
@@ -175,15 +178,17 @@ object crimenScripts {
         .map(x => (x("anio").trim.toInt,
           x("id").trim.toInt,
           x("codigo_iccs"),
-          x("presunta_infraccion")))
-        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4)))
+          x("presunta_infraccion"),
+          x("presunta_subinfraccion").trim,
+          x("presunta_modalidad").trim))
+        .map(x => escribirDatosTXT2(insertFormat.formatLocal(java.util.Locale.US, x._1, x._2, x._3, x._4, x._5, x._6)))
       println("Script " + nombreTXT + " creado con éxito")
       println(value.size)
     }
 
-    scriptCrimen1621()
-    scriptCrimen22()
-    scriptCrimen()
+    // scriptCrimen1621()
+    // scriptCrimen22()
+    // scriptCrimen()
     scriptDetencionXCrimen1621()
     scriptDetencionXCrimen22()
     scriptDetencionXCrimen2324()
