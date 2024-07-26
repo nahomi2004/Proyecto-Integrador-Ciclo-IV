@@ -1,0 +1,3565 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Comandos utilizados:\n\ngitpod /workspace/zeppelin-paavanzada/zeppelin-0.11.1-bin-all (main) $ /home/gitpod/.pyenv/versions/3.12.3/bin/pip install pymysql\n/workspace/zeppelin-paavanzada/zeppelin-0.11.1-bin-all (main) $ /home/gitpod/.pyenv/versions/3.12.3/bin/pip install pandas\n/workspace/zeppelin-paavanzada/zeppelin-0.11.1-bin-all (main) $ /home/gitpod/.pyenv/versions/3.12.3/bin/pip install pyspark",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T21:07:57+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Comandos utilizados:</h1>\n<p>gitpod /workspace/zeppelin-paavanzada/zeppelin-0.11.1-bin-all (main) $ /home/gitpod/.pyenv/versions/3.12.3/bin/pip install pymysql<br />\n/workspace/zeppelin-paavanzada/zeppelin-0.11.1-bin-all (main) $ /home/gitpod/.pyenv/versions/3.12.3/bin/pip install pandas<br />\n/workspace/zeppelin-paavanzada/zeppelin-0.11.1-bin-all (main) $ /home/gitpod/.pyenv/versions/3.12.3/bin/pip install pyspark</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855269285_1673025918",
+      "id": "paragraph_1721855269285_1673025918",
+      "dateCreated": "2024-07-24T21:07:49+0000",
+      "dateStarted": "2024-07-24T21:07:57+0000",
+      "dateFinished": "2024-07-24T21:08:00+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:186"
+    },
+    {
+      "text": "%md\n# VALIDACIÓN DE CONEXIONES",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T21:10:07+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>VALIDACIÓN DE CONEXIONES</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855287951_678196204",
+      "id": "paragraph_1721855287951_678196204",
+      "dateCreated": "2024-07-24T21:08:07+0000",
+      "dateStarted": "2024-07-24T21:10:04+0000",
+      "dateFinished": "2024-07-24T21:10:04+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:187"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\nSHOW tables;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T20:56:46+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Tables_in_detenidos": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Tables_in_detenidos",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "Tables_in_detenidos\nCanton\nCircuito\nCrimen\nDetencion\nDetencionXCrimen\nDistrito\nParroquia\nProvincia\nSubcircuito\nTasas_Porcentaje\nVictimasHomicidio\nZona\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721854538331_564657008",
+      "id": "paragraph_1721854538331_564657008",
+      "dateCreated": "2024-07-24T20:55:38+0000",
+      "dateStarted": "2024-07-24T20:56:31+0000",
+      "dateFinished": "2024-07-24T20:56:34+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:188"
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nprint(\"pymysql is installed and available.\")",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:19:21+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 4,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "pymysql is installed and available.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855319906_528092846",
+      "id": "paragraph_1721855319906_528092846",
+      "dateCreated": "2024-07-24T21:08:39+0000",
+      "dateStarted": "2024-07-24T22:19:21+0000",
+      "dateFinished": "2024-07-24T22:19:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:189"
+    },
+    {
+      "text": "%python\nimport pandas as pd\nprint(\"pandas is installed and available.\")",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:19:23+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 4,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "pandas is installed and available.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855331422_263945969",
+      "id": "paragraph_1721855331422_263945969",
+      "dateCreated": "2024-07-24T21:08:51+0000",
+      "dateStarted": "2024-07-24T22:19:23+0000",
+      "dateFinished": "2024-07-24T22:19:23+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:190"
+    },
+    {
+      "text": "%python\nfrom pyspark.sql import SparkSession\nprint(\"pyspark is installed and available.\")",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:19:26+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 4,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "pyspark is installed and available.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855348898_923033608",
+      "id": "paragraph_1721855348898_923033608",
+      "dateCreated": "2024-07-24T21:09:08+0000",
+      "dateStarted": "2024-07-24T22:19:26+0000",
+      "dateFinished": "2024-07-24T22:19:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:191"
+    },
+    {
+      "text": "%md\n# Consulta SQL que muestra el número de entradas a nuestro país en relación con los detenidos de otras nacionalidades.",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:04:31+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Consulta SQL que muestra el número de entradas a nuestro país en relación con los detenidos de otras nacionalidades.</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721854798106_358710499",
+      "id": "paragraph_1721854798106_358710499",
+      "dateCreated": "2024-07-24T20:59:58+0000",
+      "dateStarted": "2024-07-24T22:04:31+0000",
+      "dateFinished": "2024-07-24T22:04:31+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:192"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA'\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:08:41+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2016\t516160\t52619\n2017\t1048575\t98192\n2018\t2427660\t98015\n2019\t2043993\t89335\n2020\t468894\t82994\n2021\t590006\t90622\n2022\t1213831\t79608\n2023\t1477999\t73863\n2024\t0\t6310\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858675144_1652319851",
+      "id": "paragraph_1721858675144_1652319851",
+      "dateCreated": "2024-07-24T22:04:35+0000",
+      "dateStarted": "2024-07-24T22:06:02+0000",
+      "dateFinished": "2024-07-24T22:06:03+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:193"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2016\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:19:40+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2016\t516160\t52619\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858926253_2118689754",
+      "id": "paragraph_1721858926253_2118689754",
+      "dateCreated": "2024-07-24T22:08:46+0000",
+      "dateStarted": "2024-07-24T22:09:33+0000",
+      "dateFinished": "2024-07-24T22:09:33+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:194"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2017\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:19:47+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2017\t1048575\t98192\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858992394_1259020682",
+      "id": "paragraph_1721858992394_1259020682",
+      "dateCreated": "2024-07-24T22:09:52+0000",
+      "dateStarted": "2024-07-24T22:10:01+0000",
+      "dateFinished": "2024-07-24T22:10:01+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:195"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2018\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:20:07+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2018\t2427660\t98015\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859602749_713738448",
+      "id": "paragraph_1721859602749_713738448",
+      "dateCreated": "2024-07-24T22:20:02+0000",
+      "dateStarted": "2024-07-24T22:20:07+0000",
+      "dateFinished": "2024-07-24T22:20:07+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:196"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2019\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:21:34+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2019\t2043993\t89335\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859687026_1993463132",
+      "id": "paragraph_1721859687026_1993463132",
+      "dateCreated": "2024-07-24T22:21:27+0000",
+      "dateStarted": "2024-07-24T22:21:34+0000",
+      "dateFinished": "2024-07-24T22:21:34+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:197"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2020\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:21:47+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2020\t468894\t82994\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859702242_1996456610",
+      "id": "paragraph_1721859702242_1996456610",
+      "dateCreated": "2024-07-24T22:21:42+0000",
+      "dateStarted": "2024-07-24T22:21:47+0000",
+      "dateFinished": "2024-07-24T22:21:47+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:198"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2021\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:22:02+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2021\t590006\t90622\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859719239_2090398447",
+      "id": "paragraph_1721859719239_2090398447",
+      "dateCreated": "2024-07-24T22:21:59+0000",
+      "dateStarted": "2024-07-24T22:22:02+0000",
+      "dateFinished": "2024-07-24T22:22:03+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:199"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2022\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:22:54+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2022\t1213831\t79608\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859760153_617794885",
+      "id": "paragraph_1721859760153_617794885",
+      "dateCreated": "2024-07-24T22:22:40+0000",
+      "dateStarted": "2024-07-24T22:22:54+0000",
+      "dateFinished": "2024-07-24T22:22:54+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:200"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2023\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:23:08+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2023\t1477999\t73863\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859781132_1462613905",
+      "id": "paragraph_1721859781132_1462613905",
+      "dateCreated": "2024-07-24T22:23:01+0000",
+      "dateStarted": "2024-07-24T22:23:08+0000",
+      "dateFinished": "2024-07-24T22:23:08+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:201"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, t.entradas,\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\nFROM Tasas_Porcentaje t\nINNER JOIN Detencion d ON t.anioTasas = d.anio\nWHERE (d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA') AND t.anioTasas = 2024\nGROUP BY t.anioTasas, t.entradas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:23:33+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "entradas": "string",
+                      "cantidad_presos_otra_nacionalidad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "entradas",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "cantidad_presos_otra_nacionalidad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tentradas\tcantidad_presos_otra_nacionalidad\n2024\t0\t6310\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859803322_758940063",
+      "id": "paragraph_1721859803322_758940063",
+      "dateCreated": "2024-07-24T22:23:23+0000",
+      "dateStarted": "2024-07-24T22:23:33+0000",
+      "dateFinished": "2024-07-24T22:23:34+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:202"
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery0 = \"\"\"\r\nSELECT t.anioTasas, t.entradas,\r\nCOUNT(d.id_detencion) AS cantidad_presos_otra_nacionalidad\r\nFROM Tasas_Porcentaje t\r\nINNER JOIN Detencion d ON t.anioTasas = d.anio\r\nWHERE d.nacionalidad != 'ECUATORIANO' OR d.nacionalidad != 'ECUATORIANA'\r\nGROUP BY t.anioTasas, t.entradas\r\nORDER BY t.anioTasas;\r\n\"\"\"\r\npandas_df0 = pd.read_sql(query0, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark0 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df0 = SQLContext(spark0).createDataFrame(pandas_df0)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df0.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:08:09+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+--------+---------------------------------+\n|anioTasas|entradas|cantidad_presos_otra_nacionalidad|\n+---------+--------+---------------------------------+\n|     2016|  516160|                            52619|\n|     2017| 1048575|                            98192|\n|     2018| 2427660|                            98015|\n|     2019| 2043993|                            89335|\n|     2020|  468894|                            82994|\n|     2021|  590006|                            90622|\n|     2022| 1213831|                            79608|\n|     2023| 1477999|                            73863|\n|     2024|       0|                             6310|\n+---------+--------+---------------------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858827182_1656995222",
+      "id": "paragraph_1721858827182_1656995222",
+      "dateCreated": "2024-07-24T22:07:07+0000",
+      "dateStarted": "2024-07-24T22:08:09+0000",
+      "dateFinished": "2024-07-24T22:08:09+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:203"
+    },
+    {
+      "text": "%md\n# Cantidad inmigrantes legales e ilegales detenidos en el país de los que ingresaron en 2023 y 2024.",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:04:17+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Cantidad inmigrantes legales e ilegales detenidos en el país de los que ingresaron en 2023 y 2024.</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858654402_2116075257",
+      "id": "paragraph_1721858654402_2116075257",
+      "dateCreated": "2024-07-24T22:04:14+0000",
+      "dateStarted": "2024-07-24T22:04:17+0000",
+      "dateFinished": "2024-07-24T22:04:19+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:204"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT tp.anioTasas, d.estatus_migratorio, COUNT(d.estatus_migratorio), tp.entradas\nFROM Detencion d \nINNER JOIN Tasas_Porcentaje AS tp ON d.anio = tp.anioTasas\nWHERE tp.anioTasas = 2023 AND (d.estatus_migratorio != \"null\" AND d.estatus_migratorio != 'NO APLICA' AND d.estatus_migratorio != 'SIN DATO')\nGROUP BY d.estatus_migratorio, tp.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T21:14:22+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 280.4,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "estatus_migratorio": "string",
+                      "estatus_migratorio)": "string",
+                      "entradas": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "estatus_migratorio",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "estatus_migratorio)",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\testatus_migratorio\testatus_migratorio)\tentradas\n2023\tREGULAR\t13222\t1477999\n2023\tIRREGULAR\t1156\t1477999\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721854591482_2056007071",
+      "id": "paragraph_1721854591482_2056007071",
+      "dateCreated": "2024-07-24T20:56:31+0000",
+      "dateStarted": "2024-07-24T21:02:22+0000",
+      "dateFinished": "2024-07-24T21:02:22+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:205"
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery1 = \"\"\"\r\nSELECT tp.anioTasas, d.estatus_migratorio, COUNT(d.estatus_migratorio), tp.entradas\r\nFROM Detencion d \r\nINNER JOIN Tasas_Porcentaje AS tp ON d.anio = tp.anioTasas\r\nWHERE tp.anioTasas = 2023 AND (d.estatus_migratorio != \"null\" AND d.estatus_migratorio != 'NO APLICA' AND d.estatus_migratorio != 'SIN DATO')\r\nGROUP BY d.estatus_migratorio, tp.anioTasas;\r\n\"\"\"\r\npandas_df1 = pd.read_sql(query1, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark1 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df1 = SQLContext(spark1).createDataFrame(pandas_df1)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df1.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:06:57+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+------------------+---------------------------+--------+\n|anioTasas|estatus_migratorio|COUNT(d.estatus_migratorio)|entradas|\n+---------+------------------+---------------------------+--------+\n|     2023|           REGULAR|                      13222| 1477999|\n|     2023|         IRREGULAR|                       1156| 1477999|\n+---------+------------------+---------------------------+--------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721854717277_1936311816",
+      "id": "paragraph_1721854717277_1936311816",
+      "dateCreated": "2024-07-24T20:58:37+0000",
+      "dateStarted": "2024-07-24T22:06:57+0000",
+      "dateFinished": "2024-07-24T22:06:57+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:206"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT tp.anioTasas, d.estatus_migratorio, COUNT(d.estatus_migratorio), tp.entradas\nFROM Detencion d \nINNER JOIN Tasas_Porcentaje tp ON\td.anio = tp.anioTasas\nWHERE tp.anioTasas = 2024 AND (d.estatus_migratorio != \"null\" AND d.estatus_migratorio != 'NO APLICA' AND d.estatus_migratorio != 'SIN DATO')\nGROUP BY d.estatus_migratorio, tp.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T21:20:47+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "estatus_migratorio": "string",
+                      "estatus_migratorio)": "string",
+                      "entradas": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "estatus_migratorio",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "estatus_migratorio)",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\testatus_migratorio\testatus_migratorio)\tentradas\n2024\tREGULAR\t1070\t0\n2024\tIRREGULAR\t110\t0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721854962345_615105370",
+      "id": "paragraph_1721854962345_615105370",
+      "dateCreated": "2024-07-24T21:02:42+0000",
+      "dateStarted": "2024-07-24T21:18:30+0000",
+      "dateFinished": "2024-07-24T21:18:33+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:207"
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery2 = \"\"\"\r\nSELECT tp.anioTasas, d.estatus_migratorio, COUNT(d.estatus_migratorio), tp.entradas\r\nFROM Detencion d \r\nINNER JOIN Tasas_Porcentaje tp ON\td.anio = tp.anioTasas\r\nWHERE tp.anioTasas = 2024 AND (d.estatus_migratorio != \"null\" AND d.estatus_migratorio != 'NO APLICA' AND d.estatus_migratorio != 'SIN DATO')\r\nGROUP BY d.estatus_migratorio, tp.anioTasas;\r\n\"\"\"\r\npandas_df2 = pd.read_sql(query2, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark2 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df2 = SQLContext(spark2).createDataFrame(pandas_df2)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df2.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T21:58:47+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+------------------+---------------------------+--------+\n|anioTasas|estatus_migratorio|COUNT(d.estatus_migratorio)|entradas|\n+---------+------------------+---------------------------+--------+\n|     2024|           REGULAR|                       1070|       0|\n|     2024|         IRREGULAR|                        110|       0|\n+---------+------------------+---------------------------+--------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855953082_1018632455",
+      "id": "paragraph_1721855953082_1018632455",
+      "dateCreated": "2024-07-24T21:19:13+0000",
+      "dateStarted": "2024-07-24T21:58:47+0000",
+      "dateFinished": "2024-07-24T21:58:47+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:208"
+    },
+    {
+      "text": "%md\n# Consulta SQL que muestra la cantidad anual de crimen correspondiente a dos niveles de instrucción específicos.",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:26:16+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Consulta SQL que muestra la cantidad anual de crimen correspondiente a dos niveles de instrucción específicos.</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721856123717_957183030",
+      "id": "paragraph_1721856123717_957183030",
+      "dateCreated": "2024-07-24T21:22:03+0000",
+      "dateStarted": "2024-07-24T21:22:46+0000",
+      "dateFinished": "2024-07-24T21:22:46+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:209"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas,\nCOUNT(d.id_detencion) AS cantidad_presos_superior_bachillerato, ROUND(t.tasa_Crimen * 16938986 / 100) AS Inseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.nivel_instruccion IN ('CUARTO NIVEL O DE POSGRADO', 'TERCER NIVEL TECNICO-TECNOLOGICO Y DE GRADO')\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:41:59+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "cantidad_presos_superior_bachillerato": "string",
+                      "Inseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "cantidad_presos_superior_bachillerato",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "Inseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "cantidad_presos_superior_bachillerato": "string",
+                      "Inseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tcantidad_presos_superior_bachillerato\tInseguridad\n2023\t2120\t8003671.0\n2024\t141\t1.0993402E7\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721855910951_142395749",
+      "id": "paragraph_1721855910951_142395749",
+      "dateCreated": "2024-07-24T21:18:30+0000",
+      "dateStarted": "2024-07-24T23:41:59+0000",
+      "dateFinished": "2024-07-24T23:41:59+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:210"
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery3 = \"\"\"\r\nSELECT t.anioTasas,\r\nCOUNT(d.id_detencion) AS cantidad_presos_superior_bachillerato, ROUND(t.tasa_Crimen * 16938986 / 100) AS Inseguridad\r\nFROM Tasas_Porcentaje t\r\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\r\nWHERE d.nivel_instruccion IN ('CUARTO NIVEL O DE POSGRADO', 'TERCER NIVEL TECNICO-TECNOLOGICO Y DE GRADO')\r\nGROUP BY t.anioTasas\r\nORDER BY t.anioTasas;\r\n\"\"\"\r\npandas_df3 = pd.read_sql(query3, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark3 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df3 = SQLContext(spark3).createDataFrame(pandas_df3)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df3.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:41:50+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+-------------------------------------+-----------+\n|anioTasas|cantidad_presos_superior_bachillerato|Inseguridad|\n+---------+-------------------------------------+-----------+\n|     2023|                                 2120|  8003671.0|\n|     2024|                                  141|1.0993402E7|\n+---------+-------------------------------------+-----------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721857997506_1384997748",
+      "id": "paragraph_1721857997506_1384997748",
+      "dateCreated": "2024-07-24T21:53:17+0000",
+      "dateStarted": "2024-07-24T23:41:50+0000",
+      "dateFinished": "2024-07-24T23:41:50+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:211"
+    },
+    {
+      "text": "%md\n# Consulta SQL que muestra la cantidad anual de crimen en relación a número de ecuatorianos que se sienten inseguros",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T22:27:09+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Consulta SQL que muestra la cantidad anual de crimen en relación a número de ecuatorianos que se sienten inseguros</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721859982730_1452811293",
+      "id": "paragraph_1721859982730_1452811293",
+      "dateCreated": "2024-07-24T22:26:22+0000",
+      "dateStarted": "2024-07-24T22:27:09+0000",
+      "dateFinished": "2024-07-24T22:27:09+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:212"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nGROUP BY t.anioTasas, t.tasa_Crimen\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:13:00+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tasaInseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\ttasaInseguridad\n2016\t52619\t963641.0\n2017\t98192\t974744.0\n2018\t98015\t994143.0\n2019\t89335\t1181131.0\n2020\t82994\t1365858.0\n2021\t90622\t3022241.0\n2022\t79608\t4571832.0\n2023\t73863\t0.0\n2024\t6310\t0.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721857851084_1353243826",
+      "id": "paragraph_1721857851084_1353243826",
+      "dateCreated": "2024-07-24T21:50:51+0000",
+      "dateStarted": "2024-07-24T23:12:43+0000",
+      "dateFinished": "2024-07-24T23:12:44+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:213"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:15:50+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721862901227_451569975",
+      "id": "paragraph_1721862901227_451569975",
+      "dateCreated": "2024-07-24T23:15:01+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16836",
+      "dateFinished": "2024-07-24T23:15:40+0000",
+      "dateStarted": "2024-07-24T23:15:40+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\n2016\t52619\n2017\t98192\n2018\t98015\n2019\t89335\n2020\t82994\n2021\t90622\n2022\t79608\n2023\t73863\n2024\t6310\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:41:12+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "tasaInseguridad",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721864401359_1604375107",
+      "id": "paragraph_1721864401359_1604375107",
+      "dateCreated": "2024-07-24T23:40:01+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:22837",
+      "dateFinished": "2024-07-24T23:40:55+0000",
+      "dateStarted": "2024-07-24T23:40:55+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttasaInseguridad\n2016\t963641.0\n2017\t974744.0\n2018\t994143.0\n2019\t1181131.0\n2020\t1365858.0\n2021\t3022241.0\n2022\t4571832.0\n2023\t0.0\n2024\t0.0\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE t.anioTasas = 2016 OR t.anioTasas = 2017\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:39:31+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tasaInseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\ttasaInseguridad\n2016\t52619\t963641.0\n2017\t98192\t974744.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721856210509_1373008064",
+      "id": "paragraph_1721856210509_1373008064",
+      "dateCreated": "2024-07-24T21:23:30+0000",
+      "dateStarted": "2024-07-24T23:39:31+0000",
+      "dateFinished": "2024-07-24T23:39:31+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:214"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE t.anioTasas = 2018 OR t.anioTasas = 2019\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:39:21+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tasaInseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\ttasaInseguridad\n2018\t98015\t994143.0\n2019\t89335\t1181131.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721857574376_373389268",
+      "id": "paragraph_1721857574376_373389268",
+      "dateCreated": "2024-07-24T21:46:14+0000",
+      "dateStarted": "2024-07-24T23:39:21+0000",
+      "dateFinished": "2024-07-24T23:39:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:215"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE t.anioTasas = 2020 OR t.anioTasas = 2021\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:39:13+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tasaInseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\ttasaInseguridad\n2020\t82994\t1365858.0\n2021\t90622\t3022241.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721857823491_1705596175",
+      "id": "paragraph_1721857823491_1705596175",
+      "dateCreated": "2024-07-24T21:50:23+0000",
+      "dateStarted": "2024-07-24T23:39:13+0000",
+      "dateFinished": "2024-07-24T23:39:13+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:216"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE t.anioTasas = 2022 \nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:39:05+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tasaInseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\ttasaInseguridad\n2022\t79608\t4571832.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721857945977_1218947643",
+      "id": "paragraph_1721857945977_1218947643",
+      "dateCreated": "2024-07-24T21:52:25+0000",
+      "dateStarted": "2024-07-24T23:39:05+0000",
+      "dateFinished": "2024-07-24T23:39:05+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:217"
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * 16938986 / 100) as tasaInseguridad\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE t.anioTasas = 2024 OR t.anioTasas = 2023\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:38:56+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "totalPresos": "string",
+                      "tasaInseguridad": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tasaInseguridad",
+                  "index": 2,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\ttasaInseguridad\n2023\t73863\t8003671.0\n2024\t6310\t1.0993402E7\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721857977479_1506531832",
+      "id": "paragraph_1721857977479_1506531832",
+      "dateCreated": "2024-07-24T21:52:57+0000",
+      "dateStarted": "2024-07-24T23:38:56+0000",
+      "dateFinished": "2024-07-24T23:38:56+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:218"
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery4 = \"\"\"\r\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\r\nFROM Tasas_Porcentaje t\r\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\r\nGROUP BY t.anioTasas\r\nORDER BY t.anioTasas;\r\n\"\"\"\r\npandas_df4 = pd.read_sql(query4, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark4 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df4 = SQLContext(spark4).createDataFrame(pandas_df4)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df4.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:38:49+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+-----------+---------------+\n|anioTasas|totalPresos|tasaInseguridad|\n+---------+-----------+---------------+\n|     2016|      52619|       963641.0|\n|     2017|      98192|       974744.0|\n|     2018|      98015|       994143.0|\n|     2019|      89335|      1181131.0|\n|     2020|      82994|      1365858.0|\n|     2021|      90622|      3022241.0|\n|     2022|      79608|      4571832.0|\n|     2023|      73863|            0.0|\n|     2024|       6310|            0.0|\n+---------+-----------+---------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858481862_1540252504",
+      "id": "paragraph_1721858481862_1540252504",
+      "dateCreated": "2024-07-24T22:01:21+0000",
+      "dateStarted": "2024-07-24T23:38:49+0000",
+      "dateFinished": "2024-07-24T23:38:50+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:219"
+    },
+    {
+      "text": "%md\n# Consulta SQL que relaciona el número de detenidos con el numero de desempleados (mayores de edad) ",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:22:44+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721863098693_1949917479",
+      "id": "paragraph_1721863098693_1949917479",
+      "dateCreated": "2024-07-24T23:18:18+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:17731",
+      "dateFinished": "2024-07-24T23:22:44+0000",
+      "dateStarted": "2024-07-24T23:22:44+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Consulta SQL que relaciona el número de detenidos con el numero de desempleados (mayores de edad)</h1>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas,\nCOUNT(d.id_detencion) AS NumPresos, ROUND(t.tasa_Desempleo * 16938986 / 100) AS Desempleo\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.edad > 17\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:36:38+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "cantidad_presos_superior_bachillerato": "string",
+                      "Desempleo": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Desempleo",
+                  "index": 2,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "NumPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "cantidad_presos_superior_bachillerato": "string",
+                      "Desempleo": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721858453741_1907461136",
+      "id": "paragraph_1721858453741_1907461136",
+      "dateCreated": "2024-07-24T22:00:53+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:220",
+      "dateFinished": "2024-07-24T23:36:26+0000",
+      "dateStarted": "2024-07-24T23:36:26+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tNumPresos\tDesempleo\n2016\t48607\t779193.0\n2017\t89794\t643681.0\n2018\t89779\t592865.0\n2019\t85256\t643681.0\n2020\t80090\t1033278.0\n2021\t87751\t762254.0\n2022\t76585\t643681.0\n2023\t70391\t609803.0\n2024\t5979\t0.0\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery5 = \"\"\"\r\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\r\nFROM Tasas_Porcentaje t\r\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\r\nGROUP BY t.anioTasas\r\nORDER BY t.anioTasas;\r\n\"\"\"\r\npandas_df5 = pd.read_sql(query5, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark5 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df5 = SQLContext(spark5).createDataFrame(pandas_df5)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df5.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:37:04+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721863747018_2135622381",
+      "id": "paragraph_1721863747018_2135622381",
+      "dateCreated": "2024-07-24T23:29:07+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19687",
+      "dateFinished": "2024-07-24T23:37:05+0000",
+      "dateStarted": "2024-07-24T23:37:04+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+-----------+---------------+\n|anioTasas|totalPresos|tasaInseguridad|\n+---------+-----------+---------------+\n|     2016|      52619|       963641.0|\n|     2017|      98192|       974744.0|\n|     2018|      98015|       994143.0|\n|     2019|      89335|      1181131.0|\n|     2020|      82994|      1365858.0|\n|     2021|      90622|      3022241.0|\n|     2022|      79608|      4571832.0|\n|     2023|      73863|            0.0|\n|     2024|       6310|            0.0|\n+---------+-----------+---------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n# Consulta SQL que relaciona el número de detenidos con la pobreza",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:28:50+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721863703617_279228110",
+      "id": "paragraph_1721863703617_279228110",
+      "dateCreated": "2024-07-24T23:28:23+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19600",
+      "dateFinished": "2024-07-24T23:28:50+0000",
+      "dateStarted": "2024-07-24T23:28:50+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Consulta SQL que relaciona el número de detenidos con la pobreza</h1>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas,\nCOUNT(d.id_detencion) AS totalPresos, \nROUND(t.tasa_Desempleo * t.tasa_PoblacionE / 100) AS Desempleo,\nROUND((30 * t.tasa_PoblacionE / 100) * t.tasa_Desnutricion / 100) AS NiniosDesnutridos\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.edad > 17\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:38:03+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "id_detencion)": "string",
+                      "Desempleo": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Desempleo",
+                  "index": 2,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "totalPresos",
+                  "index": 1,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "NiniosDesnutridos",
+                  "index": 3,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721861234846_1015009117",
+      "id": "paragraph_1721861234846_1015009117",
+      "dateCreated": "2024-07-24T22:47:14+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5984",
+      "dateFinished": "2024-07-24T23:37:35+0000",
+      "dateStarted": "2024-07-24T23:37:35+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\tDesempleo\tNiniosDesnutridos\n2016\t48607\t760334.0\t1428106.0\n2017\t89794\t637526.0\t1389136.0\n2018\t89779\t595805.0\t1389077.0\n2019\t85256\t656184.0\t1264018.0\n2020\t80090\t1068171.0\t1318578.0\n2021\t87751\t799065.0\t1230560.0\n2022\t76585\t643681.0\t1021421.0\n2023\t70391\t0.0\t0.0\n2024\t5979\t0.0\t0.0\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas,\nCOUNT(d.id_detencion) AS totalPresos\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.edad > 17\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:45:28+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721864674086_668704238",
+      "id": "paragraph_1721864674086_668704238",
+      "dateCreated": "2024-07-24T23:44:34+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:24054",
+      "dateFinished": "2024-07-24T23:45:28+0000",
+      "dateStarted": "2024-07-24T23:45:28+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\ttotalPresos\n2016\t48607\n2017\t89794\n2018\t89779\n2019\t85256\n2020\t80090\n2021\t87751\n2022\t76585\n2023\t70391\n2024\t5979\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas, \nROUND(t.tasa_Desempleo * t.tasa_PoblacionE / 100) AS Desempleo\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.edad > 17\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:46:53+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "Desempleo": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Desempleo",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721864751991_1444686618",
+      "id": "paragraph_1721864751991_1444686618",
+      "dateCreated": "2024-07-24T23:45:51+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:24793",
+      "dateFinished": "2024-07-24T23:46:44+0000",
+      "dateStarted": "2024-07-24T23:46:43+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tDesempleo\n2016\t760334.0\n2017\t637526.0\n2018\t595805.0\n2019\t656184.0\n2020\t1068171.0\n2021\t799065.0\n2022\t643681.0\n2023\t0.0\n2024\t0.0\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%mysql2\nUSE detenidos;\n\nSELECT t.anioTasas,\nROUND((30 * t.tasa_PoblacionE / 100) * t.tasa_Desnutricion / 100) AS NiniosDesnutridos\nFROM Tasas_Porcentaje t\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\nWHERE d.edad > 17\nGROUP BY t.anioTasas\nORDER BY t.anioTasas;",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:47:19+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "anioTasas": "string",
+                      "NiniosDesnutridos": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "anioTasas",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "NiniosDesnutridos",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721864818915_1368263490",
+      "id": "paragraph_1721864818915_1368263490",
+      "dateCreated": "2024-07-24T23:46:58+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:25697",
+      "dateFinished": "2024-07-24T23:47:12+0000",
+      "dateStarted": "2024-07-24T23:47:12+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "anioTasas\tNiniosDesnutridos\n2016\t1428106.0\n2017\t1389136.0\n2018\t1389077.0\n2019\t1264018.0\n2020\t1318578.0\n2021\t1230560.0\n2022\t1021421.0\n2023\t0.0\n2024\t0.0\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%python\r\nimport pymysql\r\nimport pandas as pd\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql import SQLContext\r\n\r\n# Configuración de la conexión MySQL\r\nconnection = pymysql.connect(\r\n    host='localhost',\r\n    user='root',\r\n    password='',\r\n    database='detenidos'\r\n)\r\n\r\n# Ejecutar la consulta y guardar los resultados en un DataFrame de pandas\r\nquery6 = \"\"\"\r\nSELECT t.anioTasas, COUNT(d.id_detencion) AS totalPresos, ROUND(t.tasa_Crimen * tasa_PoblacionE / 100) as tasaInseguridad\r\nFROM Tasas_Porcentaje t\r\nLEFT JOIN Detencion d ON t.anioTasas = d.anio\r\nGROUP BY t.anioTasas\r\nORDER BY t.anioTasas;\r\n\"\"\"\r\npandas_df6 = pd.read_sql(query6, connection)\r\n\r\n# Cerrar la conexión\r\nconnection.close()\r\n\r\n# Convertir el DataFrame de pandas a un DataFrame de Spark\r\nspark6 = SparkSession.builder.appName(\"MySQL to DataFrame\").getOrCreate()\r\nspark_df6 = SQLContext(spark6).createDataFrame(pandas_df6)\r\n\r\n# Mostrar el DataFrame de Spark\r\nspark_df6.show()",
+      "user": "anonymous",
+      "dateUpdated": "2024-07-24T23:43:38+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1721863689190_18477299",
+      "id": "paragraph_1721863689190_18477299",
+      "dateCreated": "2024-07-24T23:28:09+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19531",
+      "dateFinished": "2024-07-24T23:43:38+0000",
+      "dateStarted": "2024-07-24T23:43:38+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+-----------+---------------+\n|anioTasas|totalPresos|tasaInseguridad|\n+---------+-----------+---------------+\n|     2016|      52619|       963641.0|\n|     2017|      98192|       974744.0|\n|     2018|      98015|       994143.0|\n|     2019|      89335|      1181131.0|\n|     2020|      82994|      1365858.0|\n|     2021|      90622|      3022241.0|\n|     2022|      79608|      4571832.0|\n|     2023|      73863|            0.0|\n|     2024|       6310|            0.0|\n+---------+-----------+---------------+\n\n"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "Consultas en Dataframe",
+  "id": "2K3K6CE21",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.11.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Consultas en Dataframe"
+}
